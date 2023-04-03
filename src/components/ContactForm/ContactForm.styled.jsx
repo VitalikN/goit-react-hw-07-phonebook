@@ -4,7 +4,7 @@ export const Form = styled.form`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 280px;
+  width: 250px;
 `;
 
 export const Label = styled.label`

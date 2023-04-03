@@ -4,7 +4,7 @@ export const Input = styled.input`
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 300px;
+  /* max-width: 300px; */
   box-sizing: border-box;
   padding: 10px;
   border: none;

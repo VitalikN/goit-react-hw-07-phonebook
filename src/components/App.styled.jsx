@@ -5,11 +5,12 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* width: 300px; */
+  max-width: 300px;
+  width: 100%;
   border-radius: 20px;
   margin: 0 auto;
-  margin: 20px;
-  padding: 10px;
+  margin-top: 40px;
+
   background-color: rgb(141, 179, 157);
   box-shadow: -15px -15px 2px -5px rgba(123, 51, 90, 0.5),
     -15px 15px 2px -5px rgba(60, 74, 123, 0.5),
@@ -44,4 +45,8 @@ export const Btn = styled.button`
     transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
     transform: scale(1.3);
   }
+`;
+export const Text = styled.p`
+  color: red;
+  margin-bottom: 20px;
 `;

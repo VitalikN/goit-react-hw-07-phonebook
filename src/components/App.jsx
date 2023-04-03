@@ -2,7 +2,7 @@ import { ContactForm } from './ContactForm/ContactForm';
 import { ContactList } from './Сontacts/Сontacts';
 
 import { Filter } from './Filter/filter';
-import { Container, Title } from './App.styled';
+import { Container, Title, Text } from './App.styled';
 
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
@@ -30,7 +30,7 @@ export function App() {
           <ContactList />
         </>
       ) : (
-        <p>sorry</p>
+        <Text>No any contacts in phonebook</Text>
       )}
 
       {isLoading && !error && <b>Request in progress...</b>}

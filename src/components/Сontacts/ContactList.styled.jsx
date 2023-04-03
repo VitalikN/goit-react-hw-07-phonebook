@@ -1,13 +1,15 @@
 import styled from '@emotion/styled';
 
 export const List = styled.ul`
-  padding: 0 30px;
+  padding: 0;
+  width: 100%;
 `;
 export const Item = styled.li`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 280px;
+
+  padding: 0 10px;
   margin: 5px;
 `;
 export const Text = styled.p`
@@ -15,13 +17,14 @@ export const Text = styled.p`
 
   &:hover {
     transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 `;
 
 export const Btn = styled.button`
   text-align: center;
   display: flex;
+
   border: none;
   outline: none;
   border-radius: 8px;
@@ -30,6 +33,7 @@ export const Btn = styled.button`
   text-decoration: none;
   margin: 4px;
   color: white;
+
   background: #7ca78c;
   box-shadow: rgb(0 0 0 / 64%) 10px 10px 5px 0px;
   transition: 0.3s;

@@ -11,7 +11,7 @@ import { selectContacts, selectError, selectIsLoading } from 'redux/selectors';
 
 export function App() {
   const dispatch = useDispatch();
-  const contacts = useDispatch(selectContacts);
+  const contacts = useSelector(selectContacts);
   const isLoading = useSelector(selectIsLoading);
   const error = useSelector(selectError);
 
@@ -24,7 +24,7 @@ export function App() {
       <Title>Phonebook</Title>
       <ContactForm />
       <Title>Contacts</Title>
-      {contacts.length ? (
+      {contacts.length > 0 ? (
         <>
           <Filter />
           <ContactList />

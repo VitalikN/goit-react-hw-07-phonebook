@@ -6,18 +6,17 @@ import { setFilter } from 'redux/filterSlice';
 
 export const Filter = () => {
   const dispatch = useDispatch();
-  const filterValue = useSelector(selectFilterValue);
+  const filter = useSelector(selectFilterValue);
 
-  const handleFilter = evt => {
-    dispatch(setFilter(evt.target.value));
-  };
+  const handleFilter = evt => dispatch(setFilter(evt.target.value));
+
   return (
     <div>
       <label>
         <Input
           type="text"
           name="filter"
-          value={filterValue}
+          value={filter}
           onChange={handleFilter}
         />
       </label>

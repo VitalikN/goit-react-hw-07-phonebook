@@ -30,7 +30,7 @@ export const ContactForm = () => {
         Please choose other name or phone.`,
         {
           position: 'center-center',
-          timeout: 3000,
+          timeout: 1500,
         }
       );
     }
